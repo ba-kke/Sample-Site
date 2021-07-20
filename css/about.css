@@ -1,0 +1,114 @@
+/* トップビュー */
+
+.top-view {
+  position: relative;
+  height: 55rem;
+}
+
+.top-view .ttl-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 30rem;
+}
+
+.top-view h2 {
+  font-size: 6rem;
+  margin-right: 5rem;
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+.top-view p {
+  position: relative;
+  top: 0.6rem;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.top-view img {
+  position: absolute;
+  left: 5vw;
+  top: 30rem;
+  width: 95vw;
+  height: 30rem;
+  border-radius: 4rem 0 0 4rem;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid var(--black);
+}
+
+/* ミッション */
+.mission {
+  background-color: var(--sub-color);
+  padding: 15rem 0;
+}
+
+.mission h3 {
+  font-size: 3rem;
+  color: var(--main-color);
+  margin-bottom: 3rem;
+}
+
+.mission h4 {
+  font-size: min(6rem, 10vw);
+  color: var(--white);
+  margin-bottom: 3rem;
+}
+
+.mission p {
+  font-size: 2rem;
+  color: var(--white);
+}
+
+/* 企業情報 */
+.info {
+  padding: 15rem 0;
+}
+
+.info h3 {
+  font-size: 3rem;
+  color: var(--main-color);
+  margin-bottom: 3rem;
+}
+
+.info .item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--sub-color);
+}
+
+.info .item dt {
+  width: 20rem;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.info .item dd {
+  font-size: 3rem;
+}
+
+@media screen and (max-width:960px) {
+}
+
+@media screen and (max-width:520px) {
+
+  .top-view .ttl-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .top-view h2 {
+    margin-right: 0;
+  }
+
+  .info .item {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}

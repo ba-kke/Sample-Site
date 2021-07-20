@@ -1,0 +1,13 @@
+/* 記事 */
+
+
+.article h2 {
+  font-size: 5rem;
+  padding: 15rem 0 5rem;
+}
+
+.article p {
+  font-size: 3rem;
+  padding-bottom: 15rem;
+  color: var(--sub-color);
+}

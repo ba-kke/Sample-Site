@@ -1,0 +1,93 @@
+header {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background: var(--main-color);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  margin: 2.6rem 0 2.3rem 2.4rem;
+}
+
+header .logo a {
+  text-decoration: none;
+  display: block;
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: var(--white);
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+header nav .item {
+  /* display: none; */
+  margin: 3.1rem 2rem 2.7rem;
+}
+
+.acMenu-wrapper {
+  display: none;
+  margin: 3.1rem 2rem 2.7rem;
+}
+
+header nav a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: var(--white);
+}
+
+
+@media screen and (max-width:520px) {
+
+  header nav .item {
+    display: none;
+  }
+
+  .acMenu-wrapper {
+    display: block;
+    margin: 3.1rem 2rem 2.7rem;
+  }
+
+  .fa-bars {
+    display: block;
+    color: var(--white);
+    font-size: 3rem;
+  }
+
+  #acMenu {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    padding: 4rem 2rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 8.5rem;
+    left: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+
+  #acMenu.add-display-block {
+    display: block;
+  }
+
+  .acMenu-wrapper a {
+    display: block;
+    padding: 2rem 0 2rem 0;
+    font-size: 3rem;
+    border-bottom: 2px solid var(--white);
+  }
+}

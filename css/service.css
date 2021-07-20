@@ -1,0 +1,158 @@
+/* トップビュー */
+
+.top-view {
+  position: relative;
+  height: 55rem;
+}
+
+.top-view .ttl-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 30rem;
+}
+
+.top-view h2 {
+  font-size: 6rem;
+  margin-right: 5rem;
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+.top-view p {
+  position: relative;
+  top: 0.6rem;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.top-view img {
+  position: absolute;
+  left: 5vw;
+  top: 30rem;
+  width: 95vw;
+  height: 30rem;
+  border-radius: 4rem 0 0 4rem;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid var(--black);
+}
+
+/* サービス一覧 */
+
+.service:nth-of-type(odd) {
+  background-color: var(--white);
+  padding: 10rem 0;
+}
+.service:nth-of-type(even) {
+  background-color: var(--sub-color);
+  padding: 10rem 0;
+}
+.service:nth-of-type(2) {
+  background-color: var(--sub-color);
+  padding: 15rem 0 10rem;
+}
+
+.service h3 {
+  text-align: center;
+  font-size: 3rem;
+  color: var(--main-color);
+  margin-bottom: 3rem;
+}
+
+.service .items {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.service:nth-of-type(even) .items {
+  flex-direction: row;
+}
+.service:nth-of-type(odd) .items {
+  flex-direction: row-reverse;
+}
+
+.service .items .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 55%;
+}
+
+.service .items .left h4 {
+  padding: 2rem 0;
+  font-size: 3rem;
+}
+.service:nth-of-type(even) .items .left h4 {
+  color: var(--white);
+}
+
+.service:nth-of-type(odd) .items .left h4 {
+  color: var(--sub-color);
+}
+
+.service .items .left p {
+  font-size: 2rem;
+}
+
+.service:nth-of-type(even) .items .left p {
+  color: var(--white);
+}
+
+.service:nth-of-type(odd) .items .left p {
+  color: var(--sub-color);
+}
+
+.service .items .right {
+  width: 40%;
+  align-self: center;
+}
+
+@media screen and (max-width:960px) {
+}
+
+@media screen and (max-width:520px) {
+
+  .top-view .ttl-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .top-view h2 {
+    margin-right: 0;
+  }
+
+  .service:nth-of-type(odd) {
+    padding: 5rem 0;
+  }
+  .service:nth-of-type(even) {
+    padding: 5rem 0;
+  }
+  .service:nth-of-type(2) {
+    background-color: var(--sub-color);
+    padding: 10rem 0 5rem;
+  }
+
+  .service:nth-of-type(even) .items {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .service:nth-of-type(odd) .items {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .service .items .left {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .service .items .right {
+    width: 100%;
+  }
+}
